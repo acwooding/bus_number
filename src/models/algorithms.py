@@ -6,6 +6,8 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 
+from umap import UMAP
+
 
 def available_algorithms(keys_only=True):
     """Valid Algorithms for training or prediction
@@ -24,6 +26,7 @@ def available_algorithms(keys_only=True):
     ============                 ====================================
     LinearSVC                    sklearn.svm.LinearSVC
     GradientBoostingClassifier   sklearn.ensemble.GradientBoostingClassifier
+    UMAP                         umap.UMAP
     ============                 ====================================
 
     Parameters
@@ -85,4 +88,5 @@ _ALGORITHMS = {
     'GradientBoostingClassifier': GradientBoostingClassifier(),
     'GridSearchCV': ComboGridSearchCV(),
     'RandomForestClassifier': RandomForestClassifier(),
+    'UMAP': UMAP()
 }

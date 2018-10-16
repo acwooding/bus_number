@@ -5,7 +5,8 @@ dependencies:
     - -e .
     - python-dotenv>=0.5.1
     - umap-learn
-  - setuptools
+    -pyviz
+   - setuptools
   - wheel
   - sphinx
   - click
@@ -18,4 +19,3 @@ dependencies:
   - pandas
   - requests
   - python>=3.6
-

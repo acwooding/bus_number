@@ -93,11 +93,13 @@ def load_model(model_name=None, metadata_only=False, model_path=None):
         raise Exception("model_name must be specified")
     if model_path is None:
         model_path = trained_model_path
+
     else:
         model_path = pathlib.Path(model_path)
 
     fq_metadata = model_path / f'{model_name}.metadata'
     fq_model = model_path / f'{model_name}.model'
+
     if not fq_metadata.exists():
         raise FileNotFoundError(f"Could not find model metadata: {model_name}")
 

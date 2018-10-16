@@ -1,11 +1,10 @@
 [
   {
-    "algorithm_name": "linearSVC",
+    "algorithm_name": "UMAP",
     "algorithm_params": {
-      "max_iter": 200000,
       "random_state": 42
     },
-    "dataset_name": "lvq-pak_train",
+    "dataset_name": "f-mnist_train",
     "run_number": 1
   }
 ]
